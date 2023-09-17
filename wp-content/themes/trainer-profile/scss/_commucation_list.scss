@@ -1,0 +1,35 @@
+@import 'variable';
+
+.communication-list {    
+    .section-content {
+        min-height: 60vh;    
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .thumbnails {
+            max-width: 300px;
+            max-height: 160px;
+        }
+    }
+}
+
+@media (max-width: $first-responsive) {
+
+}
+
+@media (max-width: $second-responsive) {
+    .communication-list {
+        .section-content {
+            min-height: unset;
+            padding: 1rem 0;
+
+            & > item {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+}

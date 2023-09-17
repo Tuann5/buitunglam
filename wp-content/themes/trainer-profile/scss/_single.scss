@@ -1,0 +1,89 @@
+@import 'variable';
+
+.page {    
+    .section-content {
+              
+        // Partner post type page
+        &.partner-content {
+            padding: 0 2rem;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+
+            .cart-title {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 2rem 0;
+    
+                border-bottom: 1px solid skyblue;
+    
+                & > * {
+                    padding: 0 1rem;
+                }
+                
+                .partner-infor {
+                    margin-left: 10px;
+                }
+            }
+    
+            .description {
+                line-height: 2;
+                padding: 2rem 0;
+                text-align: justify;
+            }
+        }
+
+        //Single page
+        .single-page {
+           
+            .current-post {
+               
+                .post-meta-data {
+                    padding: 1rem;
+                    background-color: #f9f9f9;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 1rem 0;
+                }
+            }
+
+            .related-items {
+                margin-top: 2rem;
+            }
+
+            .post-related {
+                margin-top: 2rem;
+                border-top: 2px solid $secondary-color;
+                
+                .realed-items {        
+                    .item {
+                        gap: 1rem;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $first-responsive) {
+
+}
+
+@media (max-width: $second-responsive) {
+    .page {
+        .section-content {
+            min-height: unset;
+            padding: 1rem 0;
+            
+            .cart-title {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    }
+
+}

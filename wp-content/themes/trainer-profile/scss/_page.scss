@@ -1,0 +1,32 @@
+@import 'variable';
+
+.page {    
+    .section-content {
+        min-height: 60vh;    
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: $first-responsive) {
+
+}
+
+@media (max-width: $second-responsive) {
+    // .page {
+    //     .section-content {
+    //         min-height: unset;
+
+    //         padding: 1rem 0;
+            
+    //         .cart-title {
+    //             display: flex;
+    //             flex-direction: column-reverse;
+    //             text-align: center;
+    //             gap: 1rem;
+    //         }
+    //     }
+    // }
+
+}

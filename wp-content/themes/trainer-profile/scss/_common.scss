@@ -1,0 +1,142 @@
+// General
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-color;
+    color: $dark-color;
+    line-height: 1.5;
+    font-family: $font-nomarl;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-stack;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+
+    &-primary {
+        background-color: $primary-color;
+    }
+
+    &-secondary {
+        background-color: $secondary-color;
+    }
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.background {
+
+    &-primary {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    &-secondary {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+
+.breadcrumbs {
+    width: 100%;
+    border-bottom: 2px dashed #e1e8ee;
+    margin-bottom: 1rem;
+}
+
+.not-upper-case {
+    text-transform: none;
+}
+
+// Padding Y
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+
+    &-2 {
+        padding: 2rem 0;
+    }
+
+    &-3 {
+        padding: 3rem 0;
+    }
+}
+
+.odd {
+    color: $primary-color;
+}
+
+.even {
+    color: $secondary-color;
+}
+
+.socical {
+    a {
+        padding: 0.5rem;
+        color: $secondary-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+p.excerpt {
+    text-align: justify !important;
+}
+
+.flex-item-center {
+    display: flex;
+    align-items: center;
+}
+
+.mr-top-1 {
+    margin-top: 1rem;
+}
