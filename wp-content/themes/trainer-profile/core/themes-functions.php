@@ -87,12 +87,4 @@
      * Custom post type action
      */
     add_action( 'init', 'custom_post_types' );	
-
-    add_filter( 'ai1vm_exclude_content_from_export', 'ignoreCertainFiles');
-
-    function ignoreCertainFiles($exclude_filters) {
-        $exclude_filters[] = 'themes/trainer-profile/node_modules';
-
-        return $exclude_filters;
-    }
 ?>
